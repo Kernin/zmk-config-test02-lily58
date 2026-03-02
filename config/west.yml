@@ -7,13 +7,12 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # support nice_oled and nice_epaper
     - name: mctechnology17
-      url-base: https://github.com/mvtechnology17
+      url-base: https://github.com/mctechnology17
 
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
-      import: app/west.yml
       import: app/west.yml
     # support nice_oled and nice_epaper
     - name: zmk-nice-oled
