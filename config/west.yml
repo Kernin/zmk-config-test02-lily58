@@ -22,5 +22,5 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
- self:
+  self:
     path: config
