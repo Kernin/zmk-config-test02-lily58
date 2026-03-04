@@ -1,17 +1,26 @@
 manifest:
-  defaults:
-    revision: v0.3
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: kernin
-      url-base: https://github.com/Kernin
+    # nice_oled - nice_epaper - dongle
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      revision: v0.3.0
       import: app/west.yml
+    # nice_oled - nice_epaper
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+    # dongle_display!view
+    - name: zmk-dongle-display-view
+      remote: mctechnology17
+      revision: main
+    # oled Adapter
+    - name: zmk-oled-adapter
+      remote: mctechnology17
+      revision: main
  self:
     path: config
